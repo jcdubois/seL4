@@ -60,6 +60,7 @@ xilinx/avnet-ultra96-rev1=ultra96
 xilinx/zynqmp-zcu102-rev1.0=zynqmp
 freescale/fsl-imx8mq-evk=imx8mq-evk
 freescale/fsl-imx8mm-evk=imx8mm-evk
+freescale/fsl-ls1043a-rdb=ls1043a-rdb
 rockchip/rk3399-rockpro64=rockpro64
 rockchip/rk3566-quartz64-a=quartz64
 broadcom/bcm2711-rpi-4-b=rpi4
