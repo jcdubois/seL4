@@ -7,17 +7,17 @@
 
 cmake_minimum_required(VERSION 3.7.2)
 
-declare_platform(ls1043a-rdb KernelPlatformls1043a-rdb PLAT_LS1043A KernelArchARM)
+declare_platform(ls1043a-rdb KernelPlatformls1043a-rdb PLAT_LS1043A_RDB KernelArchARM)
 
 if(KernelPlatformls1043a-rdb)
     declare_seL4_arch(aarch64 aarch32)
-    config_set(KernelPlatLs1043a PLAT_LS1043A ON)
+    config_set(KernelPlatLs1043a PLAT_LS1043A_RDB ON)
     set(LS1043A_MAX_IRQ 256 CACHE INTERNAL "")
     set(KernelArmCortexA53 ON)
     set(KernelArchArmV8a ON)
     set(KernelArmGicV2 ON)
     config_set(KernelARMPlatform ARM_PLAT ${KernelPlatform})
-    set(KernelArmMach "ls1043a-rdb" CACHE INTERNAL "")
+    set(KernelArmMach "layerscape" CACHE INTERNAL "")
     list(APPEND KernelDTSList "tools/dts/${KernelPlatform}.dts")
     list(APPEND KernelDTSList "src/plat/ls1043a-rdb/overlay-${KernelPlatform}.dts")
     if(KernelSel4ArchAarch32)
