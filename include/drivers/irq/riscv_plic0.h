@@ -17,7 +17,9 @@
     !defined(CONFIG_PLAT_QEMU_RISCV_VIRT) && \
     !defined(CONFIG_PLAT_ROCKETCHIP_ZCU102) && \
     !defined(CONFIG_PLAT_STAR64) && \
-    !defined(CONFIG_PLAT_ARIANE)
+    !defined(CONFIG_PLAT_CHESHIRE) && \
+    !defined(CONFIG_PLAT_ARIANE) && \
+    !defined(CONFIG_PLAT_HIFIVE_P550)
 #error "Check if this platform supports a PLIC."
 #endif
 
